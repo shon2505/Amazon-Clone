@@ -153,12 +153,13 @@ span{
     background-color: #e2e7e6;
 }
 .box{
-    border: 2px solid black;
+    border: none;
     height: 400px;
     width: 23%;
     background-color: white;
     padding: 20px 0px 15px;
     margin-top: 15px;
+    border-radius: 10px;
 }
 .box-img{
     height: 300px;
@@ -248,4 +249,13 @@ ul a:hover{
 .copyright{
     padding-top: 5px;
     
+}
+.box:hover{
+    transform: scale(1.05);
+}
+.box{
+    transition: transform 0.2s ease-in-out;
+    -webkit-box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.42);
+-moz-box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.42);
+box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.42);
 }
